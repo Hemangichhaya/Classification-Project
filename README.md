@@ -7,8 +7,6 @@ We are tasked with developing a multiclass classifier to identify images of onio
 ## Dataset
 The dataset contains images scraped from the web and is divided into train and test folders, each containing sub-folders for onions, potatoes, tomatoes, and market scenes (noise).
 
-Dataset Link: Ninjacart Vegetable Dataset
-
 ## Train Folder
 Tomato: 789 images
 Potato: 898 images
@@ -21,65 +19,63 @@ Potato: 83 images
 Onion: 81 images
 Indian market (noise): 81 images
 
-Objective
+## Objective
 Develop a program that can recognize vegetable items (tomato, potato, onion) in photos and classify them correctly, while identifying non-vegetable market images as noise.
 
 ## Concepts Tested
-Dataset Preparation & Visualization
-CNN Models
-Implementing Callbacks
-Handling Overfitting
-Transfer Learning
+* Dataset Preparation & Visualization
+* CNN Models
+* Implementing Callbacks
+* Handling Overfitting
+* Transfer Learning
 
 ## Process
 1. Libraries
-   
 We used the following key libraries:
-
-TensorFlow & Keras for deep learning
-Matplotlib & Seaborn for data visualization
-OpenCV for image processing
+* TensorFlow & Keras for deep learning
+* Matplotlib & Seaborn for data visualization
+* OpenCV for image processing
 
 2. Data Download & Visualization
-Download and unzip the dataset using the provided link.
-Visualize the data and plot a sample of images for each class using TensorFlow or Matplotlib.
-Verify the image count and check the dimensions to ensure consistency.
+* Download and unzip the dataset using the provided link.
+* Visualize the data and plot a sample of images for each class using TensorFlow or Matplotlib.
+* Verify the image count and check the dimensions to ensure consistency.
 
 3. Data Preprocessing
-Perform an 80-20 train-validation split for hyperparameter tuning.
-Resize all images to uniform dimensions and rescale pixel values to [0-1].
-Apply data augmentation techniques to handle class imbalance.
+* Perform an 80-20 train-validation split for hyperparameter tuning.
+* Resize all images to uniform dimensions and rescale pixel values to [0-1].
+* Apply data augmentation techniques to handle class imbalance.
 
 4. Model Selection & Training
-Multiple models (VGG16, ResNet50, MobileNet) were used for training.
-Transfer learning with pre-trained weights was applied due to the small size of the dataset.
-Batch normalization and dropout layers were added to address overfitting.
+* Multiple models (VGG16, ResNet50, MobileNet) were used for training.
+* Transfer learning with pre-trained weights was applied due to the small size of the dataset.
+* Batch normalization and dropout layers were added to address overfitting.
 
 5. Callbacks
-Implemented TensorBoard to track training metrics.
-Used EarlyStopping and ModelCheckpoint callbacks to optimize the training process.
+* Implemented TensorBoard to track training metrics.
+* Used EarlyStopping and ModelCheckpoint callbacks to optimize the training process.
 
 6. Evaluation
-Compared model performance using metrics such as Accuracy, Precision, Recall, and F1 Score.
-Visualized results using confusion matrices and plotted training accuracy and loss graphs.
+* Compared model performance using metrics such as Accuracy, Precision, Recall, and F1 Score.
+* Visualized results using confusion matrices and plotted training accuracy and loss graphs.
 
 ## Key Techniques Used
 1. Transfer Learning
-We fine-tuned pre-trained models like VGG16, ResNet, and MobileNet to improve classification accuracy.
+* We fine-tuned pre-trained models like VGG16, ResNet, and MobileNet to improve classification accuracy.
 
 2. Data Augmentation
-To address the class imbalance, we applied data augmentation techniques such as rotation, zooming, and horizontal flips.
+* To address the class imbalance, we applied data augmentation techniques such as rotation, zooming, and horizontal flips.
 
 3. Handling Overfitting
-Implemented BatchNormalization, Dropout layers, and EarlyStopping callbacks to prevent overfitting.
+* Implemented BatchNormalization, Dropout layers, and EarlyStopping callbacks to prevent overfitting.
 
 ## Results
-The best model achieved an accuracy of 96% on the test set.
-Confusion matrices were used to evaluate the model's performance across different classes.
+* The best model achieved an accuracy of 96% on the test set.
+* Confusion matrices were used to evaluate the model's performance across different classes.
 
 ## Insights
-Transfer learning significantly improved model performance due to the small size of the dataset.
-Data augmentation and regularization techniques were essential in reducing overfitting.
+* Transfer learning significantly improved model performance due to the small size of the dataset.
+* Data augmentation and regularization techniques were essential in reducing overfitting.
 
 ## Conclusion
 This project successfully developed a robust multiclass classifier to identify vegetables and noise in the dataset. The use of transfer learning and data augmentation techniques improved model performance, and future improvements could focus on expanding the dataset or applying attention mechanisms.

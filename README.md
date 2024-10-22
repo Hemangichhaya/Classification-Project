@@ -18,8 +18,11 @@ Indian market (noise): 599 images
 
 ## Test Folder
 Tomato: 106 images
+
 Potato: 83 images
+
 Onion: 81 images
+
 Indian market (noise): 81 images
 
 ## Objective

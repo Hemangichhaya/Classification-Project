@@ -9,8 +9,11 @@ The dataset contains images scraped from the web and is divided into train and t
 
 ## Train Folder
 Tomato: 789 images
+
 Potato: 898 images
+
 Onion: 849 images
+
 Indian market (noise): 599 images
 
 ## Test Folder
@@ -31,6 +34,7 @@ Develop a program that can recognize vegetable items (tomato, potato, onion) in 
 
 ## Process
 1. Libraries
+
 We used the following key libraries:
 * TensorFlow & Keras for deep learning
 * Matplotlib & Seaborn for data visualization

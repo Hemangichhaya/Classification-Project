@@ -37,11 +37,10 @@ Develop a program that can recognize vegetable items (tomato, potato, onion) in 
 
 ## Process
 1. Libraries
-
-We used the following key libraries:
-* TensorFlow & Keras for deep learning
-* Matplotlib & Seaborn for data visualization
-* OpenCV for image processing
+* We used the following key libraries:
+  * TensorFlow & Keras for deep learning
+  * Matplotlib & Seaborn for data visualization
+  * OpenCV for image processing
 
 2. Data Download & Visualization
 * Download and unzip the dataset using the provided link.
